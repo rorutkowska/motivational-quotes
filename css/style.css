@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Montez');
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
+
+html, body {
+    background-color: hsl(204, 86%, 53%);
+    height: 100%
+}
+
+.title{
+    color:white;
+}
+
+/* 
+// CSS3 Blockquote Effects Demo
+// source : https://codepen.io/iPawan/pen/emrPKP
+*/
+
+.quote{
+  display:block;
+  background: #46cfb0;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+
+  /*Borders - (Optional)*/
+  border-left-style: solid;
+  border-left-width: 15px;
+  border-right-style: solid;
+  border-right-width: 2px;    
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #f1f1f1;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:-5px;
+  
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}

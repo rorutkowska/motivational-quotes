@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Motivational quotes for every day</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" type="application/javascript"></script>
+        <script src="js/index.js" type="application/javascript"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <section class="section">
+            <div class="container">
+
+                <h1 class="title">Daily dose of quotes!</h1>
+
+                <div class="columns">
+                    <div class="column notification is-primary">
+
+                        <blockquote id="quote" class="quote notification is-primary"></blockquote>
+                        <cite id="author"></cite>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div id='modal' class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <article class="message is-primary">
+                    <div class="message-header">
+                        <p>Oops!</p>
+                        <button  id="modal-btn2" class="delete" aria-label="delete"></button>
+                    </div>
+                    <div class="message-body">
+                        Oops! Looks like something went wrong! Please try refreshing the page!
+                    </div>
+                </article>
+            </div>
+            <button id="modal-btn" class="modal-close is-large" aria-label="close"></button>
+        </div>
+    </body>
+</html>
